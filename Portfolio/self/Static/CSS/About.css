@@ -1,0 +1,134 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(234, 238, 241);
+}
+
+header {
+    width: 95rem;
+    height: 30rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/Static/Images/background-img 16.jpg");
+    margin-top: 0.1rem;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+nav {
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: rgb(243, 239, 235);
+    font-size: 30px;
+    margin-left: 1rem;
+    transition: 1s;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(127, 255, 212, 0.312);
+    transform: scale(1.1);
+}
+
+nav .navbar-nav {
+    margin-left: 53rem;
+}
+
+nav .navbar-nav a {
+    font-size: 14px;
+    color: rgb(244, 244, 240);
+
+}
+
+nav .navbar-nav :hover {
+    color: brown;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#div {
+    text-align: center;
+    padding-top: 12rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#div h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about {
+    text-align: center;
+    width: 15rem;
+    margin: 5rem 20rem;
+}
+
+#about #chan {
+    padding: 0.2rem 2.5rem;
+    background-color: yellow;
+    color: black;
+    border-color: whitesmoke;
+}
+
+#about #chan:hover {
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: rgba(240, 245, 249, 0.37);
+    color: white;
+}
+
+#img{
+    margin-top: 1rem;
+    position: absolute;
+}
+
+
+#img2 img {
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    margin: -15rem 40rem;
+}
+
+#img1 img {
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    margin: -8rem 35rem;
+}
+
+#img3 img {
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    margin: -10.5rem 48rem;
+}
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: rgba(139, 139, 139, 0.137);
+    text-align: center;
+    color: rgb(252, 248, 248);
+}
+
+footer>#footer div {
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    font-size: 20px;
+    margin: 1rem 8rem 0 8rem;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#footer #small {
+    font-size: small;
+}

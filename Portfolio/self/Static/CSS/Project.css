@@ -1,0 +1,197 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(234, 238, 241);
+}
+
+header {
+    width: 95rem;
+    height: 40rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/Static/Images/Project.jpg");
+    margin-top: 2rem;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+nav {
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: rgb(243, 239, 235);
+    font-size: 30px;
+    margin-left: 1rem;
+    transition: 1s;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(127, 255, 212, 0.312);
+    transform: scale(1.1);
+}
+
+nav .navbar-nav {
+    margin-left: 53rem;
+}
+
+nav .navbar-nav a {
+    font-size: 14px;
+    color: rgb(244, 244, 240);
+
+}
+
+nav .navbar-nav :hover {
+    color: brown;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#div {
+    text-align: center;
+    padding-top: 15rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#div h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#pro  h1 {
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#pro div {
+    width: 20rem;
+    height: 33rem;
+    background-color: rgba(32, 33, 33, 0.763);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 1rem 1rem;
+    margin: 1rem -12rem -1rem 15rem;
+}
+
+#pro h3 {
+    padding-top: 1rem;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+#pro p {
+    padding-top: 0.5rem;
+    font-size: small;
+}
+
+#pro div img {
+    width: 18rem;
+}
+
+#pro div #btn {
+    border-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    padding: 0.2rem 1rem;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+#pro div #btn1 {
+    border-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    margin-left: 8rem;
+    padding: 0.2rem 1rem;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+#pro div #btn:hover {
+    font-weight: bolder;
+    background-color: rgba(240, 245, 249, 0.37);
+    color: whitesmoke;
+}
+
+#pro div #btn1:hover {
+    font-weight: bolder;
+    background-color: rgba(240, 245, 249, 0.37);
+    color: whitesmoke;
+}
+
+
+
+#pure div {
+    width: 20rem;
+    height: 28rem;
+    background-color: rgba(32, 33, 33, 0.763);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 1rem 1rem;
+    margin: 8rem -12rem -1rem 15rem;
+}
+
+#pure h3 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#pure hr {
+    border-top: 2px solid #FFFFFF;
+    margin: 1rem 4rem;
+    padding: 0.03rem 5rem;
+}
+
+#pure h1 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#pure #btn {
+    border-color: rgb(255, 255, 255);
+    margin: 1.5rem 3.6rem;
+    padding: 0.5rem 2rem;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+#pure #btn:hover {
+    font-weight: bolder;
+    background-color: rgba(240, 245, 249, 0.37);
+    color: whitesmoke;
+}
+
+
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: rgba(139, 139, 139, 0.137);
+    text-align: center;
+    color: rgb(252, 248, 248);
+}
+
+footer>#footer div {
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    font-size: 20px;
+    margin: 1rem 8rem 0 8rem;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#footer #small {
+    font-size: small;
+}

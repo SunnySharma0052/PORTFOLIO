@@ -1,0 +1,171 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(234, 238, 241);
+}
+
+header {
+    width: 95rem;
+    height: 50rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/Static/Images/Intro-bg1.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+nav {
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: rgb(243, 239, 235);
+    font-size: 30px;
+    margin-left: 1rem;
+    transition: 1s;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(127, 255, 212, 0.312);
+    transform: scale(1.1);
+}
+
+nav .navbar-nav {
+    margin-left: 53rem;
+}
+
+nav .navbar-nav a {
+    font-size: 14px;
+    color: rgb(244, 244, 240);
+
+}
+
+nav .navbar-nav :hover {
+    color: brown;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#sec1 div {
+    text-align: center;
+    width: 30rem;
+    margin: -0.2rem 30rem;
+    padding-top: 21.5rem;
+}
+
+#sec1 div h4 {
+    font-size: 1.5rem;
+}
+
+#sec1 div button {
+    border-color: whitesmoke;
+    margin: 1rem 0.2rem;
+    padding: 0.3rem 1.2rem;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#sec1 div #chan {
+    background-color: yellow;
+    color: black;
+    border-color: whitesmoke;
+}
+
+#sec1 div button:hover {
+    background-color: rgba(240, 245, 249, 0.37);
+}
+
+#sec1 div #chan:hover {
+    background-color: rgba(240, 245, 249, 0.37);
+    color: white;
+}
+
+#pro h2 {
+    margin: 1rem 40rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#pro div {
+    width: 20rem;
+    height: 33rem;
+    background-color: rgba(32, 33, 33, 0.763);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 1rem 1rem;
+    margin: 1rem -12rem -1rem 15rem;
+}
+
+#pro h3 {
+    padding-top: 1rem;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+#pro p {
+    padding-top: 0.5rem;
+    font-size: small;
+}
+
+#pro div img {
+    width: 18rem;
+}
+
+#pro div #btn {
+    border-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    padding: 0.2rem 1rem;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+#pro div #btn1 {
+    border-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    margin-left: 8rem;
+    padding: 0.2rem 1rem;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+#pro div #btn:hover {
+    font-weight: bolder;
+    background-color: rgba(240, 245, 249, 0.37);
+    color: whitesmoke;
+}
+
+#pro div #btn1:hover {
+    font-weight: bolder;
+    background-color: rgba(240, 245, 249, 0.37);
+    color: whitesmoke;
+}
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: rgba(139, 139, 139, 0.137);
+    text-align: center;
+    color: rgb(252, 248, 248);
+}
+
+footer>#footer div {
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    font-size: 20px;
+    margin: 1rem 8rem 0 8rem;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#footer #small {
+    font-size: small;
+}

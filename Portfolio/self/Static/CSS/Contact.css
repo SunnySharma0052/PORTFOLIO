@@ -1,0 +1,194 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(234, 238, 241);
+}
+
+header {
+    width: 95rem;
+    height: 30rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/Static/Images/Contact.jpg");
+    margin-top: 0.1rem;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+nav {
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: rgb(243, 239, 235);
+    font-size: 30px;
+    margin-left: 1rem;
+    transition: 1s;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(127, 255, 212, 0.312);
+    transform: scale(1.1);
+}
+
+nav .navbar-nav {
+    margin-left: 53rem;
+}
+
+nav .navbar-nav a {
+    font-size: 14px;
+    color: rgb(244, 244, 240);
+
+}
+
+nav .navbar-nav :hover {
+    color: brown;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#div {
+    text-align: center;
+    padding-top: 12rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#div h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+
+section div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -2px;
+}
+
+#d1 {
+    height: 33rem;
+    width: 25rem;
+    overflow: hidden;
+}
+
+#d1>img {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#d2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/Static/Images/background-img 15.jpeg");
+    height: 33rem;
+    width: 25rem;
+    text-align: left;
+    padding: 8px 40px 15px 30px;
+    background-color: rgb(39, 55, 70);
+}
+
+#d2 input {
+    color: white;
+    height: 20px;
+    margin: 12px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+label {
+    text-transform: capitalize;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1rem;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+#d2 input::placeholder {
+    color: rgb(202, 202, 202);
+}
+
+#d2 button {
+    background-color: rgb(39, 153, 218);
+    color: white;
+    margin-top: 2.7rem;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid rgb(15, 90, 134);
+}
+
+#d2 button:hover {
+    background-color: rgb(20, 107, 157);
+}
+
+
+
+
+
+
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: rgba(139, 139, 139, 0.137);
+    text-align: center;
+    color: rgb(252, 248, 248);
+}
+
+footer>#footer div {
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    font-size: 20px;
+    margin: 1rem 8rem 0 8rem;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#footer #small {
+    font-size: small;
+}

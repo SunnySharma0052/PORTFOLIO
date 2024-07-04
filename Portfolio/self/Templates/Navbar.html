@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% block Favicons %}
+      <link rel="shortcut icon" href="Static/Favicons/navbar.png" type="image/x-icon" />
+    {% endblock %}
+
+    {% block title %}
+      <title>Home</title>
+    {% endblock %}
+
+    {% comment %}bootstrap{% endcomment %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    {% comment %}Link CSS File{% endcomment %}
+    {% block css %}
+      <link rel="stylesheet" href="Static/CSS/Navbar.css" />
+    {% endblock %}
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand px-2 py-1" href="/">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="{% url 'Project' %}">Project</a>
+              <a class="nav-link" href="{% url 'About' %}">About</a>
+              <a class="nav-link" href="{% url 'Contact' %}">Contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="btn btn-warning" href="https://wa.link/fkfcj8" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me!</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      {% block sec %}
+        <section id="sec1">
+          <div>
+            <h4 style="font-weight: lighter;">I'M FREELANCER.</h4>
+            <h1>FULL-STACK DEVELOPER.</h1>
+            <a href="#pro"><button id="chan">Projects</button></a>
+            <a href="/Contact"><button>CONTACT</button></a>
+          </div>
+        </section>
+      {% endblock %}
+    </header>
+
+    <main>
+      {% block content %}
+        <Section id="pro">
+          <h2>Projects</h2>
+          <div>
+            <img src="Static/Images/Project15.jpg" alt="" />
+            <h3>Ecommerce Website Design</h3>
+            <p>Ecommerce (or electronic commerce) is the buying and selling of goods or services on the Internet. It encompasses a wide variety of data, systems and tools for online buyers and sellers, including mobile shopping and online payment encryption.</p>
+            <button id="btn">View</button>
+            <button id="btn1">Source</button>
+          </div>
+          <div>
+            <img src="Static/Images/Project17.png" alt="" />
+            <h3>LMS/Course Website Design</h3>
+            <p>A learning management system (LMS) or virtual learning environment (VLE) is a software application for the administration, documentation, tracking, reporting, automation, and delivery of educational courses, training programs, materials or learning and development programs.</p>
+            <button id="btn">View</button>
+            <button id="btn1">Source</button>
+          </div>
+          <div>
+            <img src="Static/Images/Project18.png" alt="" />
+            <h3>Rymo Ecommerce Design</h3>
+            <p>"A world-class, cutting-edge design and development enterprise, helping people globally rediscover their mobility, through a suite of value for money 'smart' products that enables measurable clinical outcomes, in active partnership with healthcare service providers".</p>
+            <button id="btn">View</button>
+            <button id="btn1">Source</button>
+          </div>
+        </Section>
+      {% endblock %}
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div>
+          <p>
+            <img src="/Static/Footer/location.png" alt="location" width="25px" />&nbsp;&nbsp;
+            123 Housing Society. Uttar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pradesh.
+          </p>
+          <p>
+            <img src="/Static/Footer/call.png" alt="phone" width="25px" />&nbsp;&nbsp;
+            <a href="tel:7078738901" style="color: aliceblue; text-decoration: none;">70787-38901</a>
+          </p>
+          <p>
+            <img src="/Static/Footer/mail.png" alt="mail" width="25px" />&nbsp;&nbsp;
+            <a href="mailto:sunnysharma81872@gmal.com" style="color: aliceblue; text-decoration: none;">sunny81872@gmail.com</a>
+          </p>
+        </div>
+
+        <div id="small">
+          <h3>About The Company</h3>
+          <p>This is me Sunny Sharma. CEO & Founder of Shyam Plaza. I enjoy discussing New Project and design challenges. My goal is to create a website that is both visually appealing and easy to use for the user. I am passionate about creating websites that are both visually appealing and easy to use.</p>
+          <br />
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/sunny_vashistha.official?igsh=MWVrYnBnc3o1czJ2eA=="><img src="/Static/Footer/instagram.png" alt="instagram" width="35px" /></a>&nbsp;&nbsp;
+            <a href="https://www.facebook.com/sunnyvashistha0052?mibextid=ZbWKwL"><img src="/Static/Footer/facebook.png" alt="facebook" width="35px" /></a>&nbsp;&nbsp;
+            <a href="https://x.com/SunnySharma0052?s=09"><img src="/Static/Footer/twitter.png" alt="twitter" width="35px" /></a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/sunny-sharma-316a93271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="/Static/Footer/linkedin.png" alt="twitter" width="35px" /></a>
+          </p>
+        </div>
+      </section>
+      <hr />
+      <p>Terms & Conditions &nbsp;&nbsp; &copy;Rights Reserved &nbsp;&nbsp;<span style="color: blueviolet;">BY:- SUNNY SHARMA</span></p>
+    </footer>
+  </body>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</html>

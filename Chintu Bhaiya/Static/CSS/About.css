@@ -1,0 +1,309 @@
+@font-face {
+    font-family: Old School;
+    src: url('varsity_regular.ttf');
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000000c8;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/Static/IMAGE/about.png");
+    background-size: cover;
+    background-position: top;
+    padding: 10px;
+    padding-bottom: 10rem;
+}
+
+header>nav {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 15px;
+
+}
+
+header .navbar-brand {
+    transition: 1s;
+}
+
+header .navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+header .navbar-nav .nav-link {
+    color: aliceblue;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: rgb(211, 104, 104);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px 0 10px 0;
+    text-align: left;
+}
+
+.profile-img {
+    margin: 0 10rem;
+}
+
+.heading {
+    flex: 1;
+    color: antiquewhite;
+}
+
+
+/* Media Query for Larger Devices */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .profile-img {
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .heading {
+        margin-right: 20px;
+    }
+
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .heading h2 {
+        font-size: 2rem;
+    }
+
+    .heading h4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Query for Smaller Devices */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        margin-left: 10rem;
+        margin-bottom: -8rem;
+        margin-top: 5rem;
+    }
+
+    .heading {
+        margin-right: 0;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .heading h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+#sec1 {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff0f0;
+}
+
+#sec1 p {
+    font-size: 1rem;
+}
+
+
+#sec1 h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#sec1 img {
+    width: 350px;
+    height: 8rem;
+    margin: -1rem 0 0 -0.5rem;
+}
+
+#sec1>div {
+    width: 380px;
+    height: 680px;
+    background-color: rgba(139, 83, 83, 0.293);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+#sec1>div a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+#sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.image-container img {
+    max-width: 600px;
+    height: 680px;
+    margin-bottom: 10px;
+}
+
+.text-container {
+    max-width: 700px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.text-container h3 {
+    color: rgba(211, 151, 73, 0.885);
+    margin-top: 0;
+}
+
+hr {
+    border-top: 3px solid #6af00b;
+}
+
+.text-container p {
+    margin-bottom: 20px;
+}
+
+/* Media Query for Larger Devices */
+@media (min-width: 768px) {
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        margin-left: 10rem;
+        margin-right: -3.5rem;
+    }
+
+    #sec2 {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .image-container {
+        flex: 1;
+        margin-left: 15rem;
+    }
+
+    .text-container {
+        flex: 2;
+    }
+
+    .text-container h3 {
+        font-size: 2.3rem;
+    }
+
+    .text-container p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Media Query for Smaller Devices */
+@media (max-width: 767px) {
+    .text-container h3 {
+        font-size: 2rem;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+}
+
+
+footer {
+    background-color: rgb(10, 6, 64);
+    padding: 5px;
+    text-align: center;
+    color: grey;
+}
+
+footer input {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: 1.5px solid gray;
+}
+
+footer>section {
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer>section div {
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    font-size: 20px;
+    margin: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-top: 2px solid gray;
+    padding-top: 20px;
+}
+
+footer a>img {
+    margin-top: 20px;
+    height: 50px;
+}
+
+footer iframe {
+    width: 100%;
+    height: 230px;
+}
+
+footer a {
+    color: gray;
+    line-height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: HomerSimpson;
+}
+
+#top-button {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+}

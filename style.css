@@ -1,0 +1,305 @@
+/* Global Reset and Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6f42c1, #6610f2, #d6336c, #fd7e14);
+    background-size: 800% 800%;
+    animation: gradientBG 20s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* Left Hero Section */
+.hero-left {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 5rem;
+    height: 80vh;
+}
+
+.hero-img {
+    margin-top: 3rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 3px solid #fff;
+}
+
+.hero-left h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.hero-left p {
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    color: #f8f9fa;
+}
+
+.custom-btn {
+    position: relative;
+    color: black;
+    background: transparent;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    overflow: visible;
+    z-index: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-btn:hover {
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* Rainbow border + glow */
+.custom-btn::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 400% 400%;
+    border-radius: 12px;
+    animation: rainbow-rotate 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -2;
+
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7),
+        0 0 25px 10px rgba(255, 165, 0, 0.6),
+        0 0 35px 15px rgba(255, 255, 0, 0.5);
+}
+
+.custom-btn:hover::before {
+    opacity: 1;
+}
+
+/* Inner white background layer */
+.custom-btn::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: white;
+    border-radius: 6px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Rainbow animation keyframes (already included in project-card but added here again for completeness) */
+@keyframes rainbow-rotate {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+/* Right Content Section */
+.content-right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Glassmorphism Section */
+.section-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-left: 4px solid #fff;
+    padding-left: 0.6rem;
+}
+
+/* Project Cards */
+.project-card {
+    position: relative;
+    color: #fff;
+    background: transparent;
+    /* Transparent base */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    z-index: 0;
+    overflow: visible;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Rainbow glowing border + background */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 400% 400%;
+    border-radius: 16px;
+    animation: rainbow-rotate 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -2;
+
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7),
+        0 0 25px 10px rgba(255, 165, 0, 0.6),
+        0 0 35px 15px rgba(255, 255, 0, 0.5);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* Inner background white */
+.project-card::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Slight translucent white */
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@keyframes rainbow-rotate {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h4 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills List */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li::before {
+    content: '✔';
+    margin-right: 0.5rem;
+    color: #fff;
+}
+
+/* Education Section */
+.education-flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.education-flex img {
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Links */
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #ffc107;
+}
+
+.contact-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    color: #eee;
+    margin-bottom: 2rem;
+}
